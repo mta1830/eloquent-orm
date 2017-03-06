@@ -40,18 +40,22 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{ route('home') }}">Eloquent ORM</a>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Consultas Eloquent
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{{ route('all') }}">
+                                Todos los usuarios (ALL)
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-        </div><!--/.navbar-collapse -->
     </div>
 </nav>
 
