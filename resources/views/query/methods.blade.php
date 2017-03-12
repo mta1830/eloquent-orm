@@ -5,13 +5,7 @@
     <h1>{{ $title }}</h1>
     <table class="table table-hover table-stripped">
         <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>Género</th>
-            <th>Biografía</th>
-        </tr>
+        @include('partials.head-users')
         </thead>
         <tbody>
         @include('partials.list-users')
