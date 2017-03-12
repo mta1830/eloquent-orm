@@ -23,4 +23,13 @@ class QueryController extends Controller
 
         return view('query.methods', compact('title','users'));
     }
+
+    public function eloquentGetCustom(){
+        $users = User::where('id','>',0)
+                ->get(['id', 'name', 'biography']);
+
+        $title = "Lista de usuarios (GET Custom - con Array)";
+
+        return view('query.methods', compact('title','users'));
+    }
 }

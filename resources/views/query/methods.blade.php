@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+    <div class="container">
     <h1>{{ $title }}</h1>
     <table class="table table-hover table-stripped">
         <thead>
@@ -13,7 +14,8 @@
         </tr>
         </thead>
         <tbody>
-        @include('query.partials.list-users')
+        @include('partials.list-users')
         </tbody>
     </table>
+    </div>
 @endsection
