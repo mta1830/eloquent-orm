@@ -29,5 +29,15 @@
                 Lista de usuarios en select (LISTS)
             </a>
         </li>
+        <li>
+            <a href="{{ route('first-last') }}">
+                First Last
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('paginate') }}">
+                Eloquent paginate
+            </a>
+        </li>
     </ul>
 </li>
